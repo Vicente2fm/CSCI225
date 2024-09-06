@@ -1,9 +1,102 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>CSCI225 Course Homework Website</title>
-	</head>
-	<body>
-		<p> Great Job. My first assignment is done</p>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI225 Homepage of [Your Name]</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="https://www.usca.edu">USCA Main Website</a></li>
+            <li><a href="#assignment">Assignment Section</a></li>
+            <li><a href="#contact">Contact Information Section</a></li>
+            <li><a href="https://www.youtube.com">Youtube</a></li>
+            <li><a href="https://www.Nintendo.com">Nintendo </a></li>
+        </ul>
+    </div>
+
+    <!-- Introduction Section -->
+    <div class="introduction">
+        <h1>Introduction</h1>
+        <p><strong>Hello! My name is Vicente Esparza. I am currently studying <em>Mathematics</em> and <em>Computer Science at USCA</em>. I have a high interest in applied mathematics and computer science .I am planning on becoming a high school math teacher. In the long run I may get my <mark>master's degree</mark> to teach college one day.</strong></p>
+        <img src="img/lowpolyuglybear.jpg" alt="A picture of a bear from the game Elder Scrolls 3: Morrowind ">
+    </div>
+
+    <!-- Assignment Section -->
+    <div class="assignment" id="assignment">
+        <h1>Assignment</h1>
+        <ol>
+            <li><a href="img/Assignment1.pdf">Assignment1.pdf</a></li>
+            <!-- Add more assignments as needed -->
+        </ol>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="portfolio">
+        <h1>Portfolio</h1>
+        <ul>
+            <li>
+                <p>Created various Java projects in CSCI145-146</p>
+            </li>
+            <li>
+                <p>Created a Java based projects in software engineering based on creating a databse to help students manage classes</p>
+            </li>
+            <li>
+                <p>took a class in Android programming that dealt with creating simple apps. needing a basic understanding of coding in general</p>
+            </li>
+        </ul>
+        <p>Technical Skills: Android, Java, HTML and  JavaScript.</p>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="contact" id="contact">
+        <h1>Contact Information</h1>
+        <address>
+            <p>Email: <a href="mailto:Vesparza@usca.edu">Vesparza@usca.edu</a></p>
+        </address>
+    </div>
+
+    <!-- Schedule Section -->
+    <div class="schedule">
+        <h1>Schedule</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>12:00 PM - 1:15 PM</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>12:00 PM - 1:15 PM</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>8:00 AM - 8:50 AM</td>
+                    <td>Buisness Finance </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Vicente Esparza. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to automatically update the year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
 </html>
