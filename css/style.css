@@ -1,0 +1,47 @@
+h1, h2 {
+    font-family: Lato;
+  }
+  
+  
+  #side{
+      overflow-x: hidden;
+      overflow-y:scroll;
+      width: 30%;
+      height: 100vh;
+      position: fixed;
+      top:0px;
+      left:0px;
+  }
+  
+  .practicearea{
+      top: 10px;
+      left: 32%;
+      width: 67%;
+      position: relative;
+      height: 100%;
+      overflow: auto;
+  }
+  
+  .practice{
+      margin-right: 10px;
+      margin-bottom:20px;
+      padding:30px;
+      background-color:#f5f9fa;
+      border-left:4px solid #3f87a6;
+      border-radius:6px;
+      -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.05);
+      box-shadow:0 1px 1px rgba(0,0,0,0.05);
+      background-image: url("../img/minus.png");
+      background-position: right top;
+      background-repeat: no-repeat;
+      text-indent: 0px;
+      transition: all 0.5s ease-in-out;
+  }
+  
+  .ahide{
+      height: 20px;
+      overflow: hidden;
+      text-indent: -99999px;
+      background-image: url("../img/plus.png");
+  }
+
