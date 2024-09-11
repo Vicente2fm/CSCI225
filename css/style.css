@@ -45,3 +45,10 @@ h1, h2 {
       background-image: url("../img/plus.png");
   }
 
+table{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+}
