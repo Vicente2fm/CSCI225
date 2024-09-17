@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <!-- Embedded Video Section -->
+    <section class="video">
+        <h2>Watch My Introduction</h2>
+        <iframe width="1022" height="575" src="https://www.youtube.com/embed/vsyGHmGUKJA" title="G Rank RAJANG Has An Insane Hitbox In MHGU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+        <h2>Feedback Form</h2>
+        <form name="feedback" action="#" method="post">
+            <!-- User's First Name -->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="anonymous" required>
+            <br>
+
+            <!-- User's Last Name -->
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="anonymous" required>
+            <br>
+
+            <!-- Email Address -->
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="mail" placeholder="name@domain.com">
+            <br>
+
+            <!-- Recommendation Radio Buttons -->
+            <fieldset>
+                <legend>Would you recommend this website?</legend>
+                <label><input type="radio" name="recommend" value="yes"> Yes</label>
+                <label><input type="radio" name="recommend" value="no"> No</label>
+            </fieldset>
+            <br>
+
+            <!-- Favorite Website Selection Box -->
+            <label for="favorite">Favorite Website:</label>
+            <select id="favorite" name="favorite">
+                <option value="google">Google</option>
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="time">Time</option>
+                <!-- Add more options as needed -->
+            </select>
+            <br>
+
+            <!-- Rating Range Element -->
+            <label for="rating">Rate our website from 1 to 10:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" value="5" step="1">
+            <br>
+
+            <!-- Comments Textarea -->
+            <label for="comment">Additional Comments:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Your comments here..."></textarea>
+            <br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Vicente Esparza. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to automatically update the year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
