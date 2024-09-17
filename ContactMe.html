@@ -21,19 +21,33 @@
         <form name="feedback" action="#" method="post">
             <!-- User's First Name -->
             <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" placeholder="first name" required>
+            <input type="text" id="fname" name="fname" placeholder="anonymous" required>
             <br>
 
             <!-- User's Last Name -->
             <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" placeholder="last name " required>
+            <input type="text" id="lname" name="lname" placeholder="anonymous " required>
             <br>
 
             <!-- Email Address -->
             <label for="mail">Email:</label>
-            <input type="email" id="mail" name="mail" placeholder="name@usca.edu">
+            <input type="email" id="mail" name="mail" placeholder="name@domain.com">
+            <br>
+                <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
             <br>
 
+            <!-- Number Input -->
+            <label for="quantity">Number of Visits:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="100" step="1" placeholder="Enter number of visits">
+            <br>
+
+            <!-- Search Input -->
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search" placeholder="Search our site...">
+            <br>
+            
             <!-- Recommendation Radio Buttons -->
             <fieldset>
                 <legend>Would you recommend this website?</legend>
@@ -48,6 +62,7 @@
                 <option value="google">Google</option>
                 <option value="facebook">Facebook</option>
                 <option value="twitter">Twitter</option>
+                <option value="Time">TikTok</option>
                 <option value="TikTok">TikTok</option>
             </select>
             <br>
@@ -59,7 +74,7 @@
 
             <!-- Comments Textarea -->
             <label for="comment">Additional Comments:</label>
-            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Your comments here..."></textarea>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="comment"></textarea>
             <br>
 
             <!-- Submit Button -->
