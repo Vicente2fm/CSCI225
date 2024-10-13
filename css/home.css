@@ -1,0 +1,101 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #792222; /* Change to your desired color */
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: rgb(95, 38, 38);
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    color: rgb(172, 66, 66);
+    text-decoration: none;
+}
+
+.introduction {
+    position: fixed;
+    top: 50px; /* Adjust according to your navbar height */
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #924040;
+    overflow: hidden;
+}
+
+.introduction p {
+    float: left;
+    width: 60%; /* Adjust as needed */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.introduction img {
+    float: right;
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.assignment {
+    position: absolute;
+    top: 300px; /* Adjust according to your layout */
+    left: 60;
+    right: 0;
+    padding: 20px;
+    background-color: #8a3d3d;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: rgb(54, 33, 33);
+    text-align: center;
+    padding: 10px 0;
+}
+.portfolio {
+    position: absolute; /* Use absolute positioning */
+    top: 500px; /* Adjust this value to place it above the schedule */
+    left: 20px; /* Horizontal positioning */
+    width: calc(100% - 40px); /* Responsive width */
+    padding: 20px;
+    background-color: #b33636; /* Optional: background color */
+    border: 1px solid #ccc; /* Optional: border */
+    z-index: 2; /* Ensure it appears above other content */
+}
+
+.schedule {
+    position: absolute; /* Keep it absolute */
+    top: 1000px; /* Ensure this is lower than the portfolio */
+    left: 20px; /* Horizontal positioning */
+    width: calc(100% - 40px); /* Responsive width */
+    padding: 20px;
+    background-color: #692b2b; /* Optional: background color */
+    border: 1px solid #ccc; /* Optional: border */
+    z-index: 1; /* Lower than portfolio */
+}
+.contact {
+    position: absolute; /* Use absolute positioning */
+    top: 800px; /* Position it between portfolio and schedule */
+    left: 20px; /* Horizontal positioning */
+    width: calc(100% - 40px); /* Responsive width */
+    padding: 20px;
+    background-color: #6e2a2a; /* Optional: background color */
+    border: 1px solid #ccc; /* Optional: border */
+}
