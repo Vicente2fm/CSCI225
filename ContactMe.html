@@ -9,98 +9,109 @@
 
 
 </head>
+<body>
 <div class="container">
 <div class="row">
-    <div class="navbar">
-        <ul>
-            <li><a href="https://www.usca.edu">USCA Main Website</a></li>
-            <li><a href="#assignment">Assignment Section</a></li>
-            <li><a href="#contact">Contact Information Section</a></li>
-            <li><a href="https://www.youtube.com">Youtube</a></li>
-            <li><a href="https://www.Nintendo.com">Nintendo </a></li>
-            <li><a href="https://merlinspizza.com/">Pizza Place in North Florida </a></li>
-
+<div class="col">
+  <h1>Contact Me</h1>
+    <div class="navbar navbar-expand-lg navbar-light bg-dark">
+      <ul class="navbar-nav"></ul>
+            <li class="'nav-item"><a class="nav-link text-light" href="https://www.usca.edu">USCA Main Website</a></li>
+            <li class="'nav-item"><a class="nav-link text-light" href="#assignment">Assignment Section</a></li>
+            <li class="'nav-item"><a class="nav-link text-light" href="#contact">Contact Information Section</a></li>
+            <li class="'nav-item"><a class="nav-link text-light" href="https://www.youtube.com">Youtube</a></li>
+            <li class="'nav-item"><a class="nav-link text-light" href="https://www.Nintendo.com">Nintendo </a></li>
+            <li class="'nav-item"><a class="nav-link text-light" href="https://merlinspizza.com/">Pizza Place in North Florida </a></li>
         </ul>
     </div>
 </div>
-<body>
-    <header>
-        <h1>Contact Me</h1>
-    </header>
+</div>
+
 <div class="row">
     <div class="col">
     <!-- Embedded Video Section -->
-    <section class="video">
+    <section class="d-none">
         <h2>Elderly Man asks random drive thru employee if they have the Fortnite Battle Pass</h2>
-        <iframe width="1022" height="575" src="https://www.youtube.com/embed/r3aT25htaQY" title="Ya'll have the Fortnite Battle Pass? Drivethru meme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class ="mt-3 border rounded-3" width="511" height="225" src="https://www.youtube.com/embed/r3aT25htaQY" title="Ya'll have the Fortnite Battle Pass? Drivethru meme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+    </section>
+  </div>
+<div class="col">
+    <h2>Feedback Form</h2>
+    <form name="feedback" class="mt-3" action="#" method="post">
+        <!-- User's First Name -->
+         <div class="form-floating mb-2">
+        <input class="form-control" type="text" id="fname" name="fname" placeholder="anonymous" required>
+        <label for="fname">First Name:</label>
+        <br>
+         </div>
+        <!-- User's Last Name -->
+        <div class="form-floating mb-2">
+        <input  class="form-control"  type="text" id="lname" name="lname" placeholder="anonymous " required>
+        <label class="form-label"for="lname">Last Name:</label>
+        <br>
+
+        <!-- Email Address -->
+        <div class="form-floating mb-4">
+        <input class="form-control" type="email" id="mail" name="mail" placeholder="name@domain.com">
+        <label class="form-label"for="mail">Email:</label>
+        <br>
+        <!-- Date of Birth -->
+        <label class="form-label" for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+
+        <!-- Number Input -->
+        <label class="form-label"for="quantity">Number of Visits:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" step="1" placeholder="Enter #">
+        <br>
+
+        <!-- Search Input -->
+        <label class="form-label" for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search our site...">
+        <br>
+
+        <!-- Recommendation Radio Buttons -->
+        <fieldset style="display: inline-block;"><!--reduces space of the text block-->
+            <legend>Would you recommend this website?</legend>
+            <div class="form check">
+            <input class=  "form-check-input" type="radio"id=yes name="recommend" value="yes"> Yes</input>
+            <label class=  "form-check-label" for="'yes"> yes</label><br>
+            <input class="form-check-input"  type="radio" id= no name="recommend" value="no"> no</input>
+            <label class=  "form-check-label" for="no" > no</label><br>
+            </div>
+        </fieldset>
+        <br>
+
+        <!-- Favorite Website Selection Box -->
+        <label for="favorite">Favorite Website:</label>
+        <select id="favorite" name="favorite">
+            <option value="google">Google</option>
+            <option value="facebook">Facebook</option>
+            <option value="twitter">Twitter</option>
+            <option value="Time">Time</option>
+            <option value="TikTok">TikTok</option>
+        </select>
+        <br>
+
+        <!-- Rating Range Element -->
+        <label for="rating">Rate this website from 1 to 10:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" value="5" step="1">
+        <br>
+
+        <!-- Comments Textarea -->
+        <label for="comment">Additional Comments:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="comment"></textarea>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Feedback</button>
+    </form>
     </div>
-    </section>
 
-        <h2>Feedback Form</h2>
-        <form name="feedback" action="#" method="post">
-            <!-- User's First Name -->
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" placeholder="anonymous" required>
-            <br>
-
-            <!-- User's Last Name -->
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" placeholder="anonymous " required>
-            <br>
-
-            <!-- Email Address -->
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="mail" placeholder="name@domain.com">
-            <br>
-                <!-- Date of Birth -->
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required>
-            <br>
-
-            <!-- Number Input -->
-            <label for="quantity">Number of Visits:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="100" step="1" placeholder="Enter #">
-            <br>
-
-            <!-- Search Input -->
-            <label for="search">Search:</label>
-            <input type="search" id="search" name="search" placeholder="Search our site...">
-            <br>
-
-            <!-- Recommendation Radio Buttons -->
-            <fieldset style="display: inline-block;"><!--reduces space of the text block-->
-                <legend>Would you recommend this website?</legend>
-                <label><input type="radio" name="recommend" value="yes"> Yes</label>
-                <label><input type="radio" name="recommend" value="no"> No</label>
-            </fieldset>
-            <br>
-
-            <!-- Favorite Website Selection Box -->
-            <label for="favorite">Favorite Website:</label>
-            <select id="favorite" name="favorite">
-                <option value="google">Google</option>
-                <option value="facebook">Facebook</option>
-                <option value="twitter">Twitter</option>
-                <option value="Time">Time</option>
-                <option value="TikTok">TikTok</option>
-            </select>
-            <br>
-
-            <!-- Rating Range Element -->
-            <label for="rating">Rate this website from 1 to 10:</label>
-            <input type="range" id="rating" name="rating" min="1" max="10" value="5" step="1">
-            <br>
-
-            <!-- Comments Textarea -->
-            <label for="comment">Additional Comments:</label>
-            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="comment"></textarea>
-            <br>
-
-            <!-- Submit Button -->
-            <button type="submit">Submit Feedback</button>
-        </form>
-    </section>
-
+</div>
+<div class="row">
+<div class = "col">
     <footer>
         <p>&copy; <span id="year"></span> Vicente Esparza. All rights reserved.</p>
     </footer>
@@ -111,10 +122,10 @@
     </script>
     </div>
     </div>
+</div>
     <!--bootstrap  javascript and pop-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
 </body>
 </html>
