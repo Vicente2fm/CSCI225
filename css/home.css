@@ -1,153 +1,114 @@
-body {
+/* General Reset */
+* {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #792222; /* Background color */
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar {
+/* Introduction Section */
+#introduction {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 50%;
+}
+
+#introduction p {
+    float: left;
+    width: 60%;
+}
+
+#introduction img {
+    float: right;
+    width: 40%;
+    height: auto;
+}
+
+/* Navigation */
+nav {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #333;
-    color: rgb(95, 38, 38);
-    padding: 10px 0;
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+nav ul {
+    list-style: none;
+    display: flex; /* Option 1: Display the nav list in one line */
     justify-content: space-around;
 }
 
-.navbar a {
-    color: rgb(172, 66, 66);
-    text-decoration: none; /* No underline */
-    transition: color 0.3s ease; /* Transition effect */
+nav ul li {
+    border-radius: 10px; /* Rounded corners for navigation items */
 }
 
-.navbar a:hover {
-    color: #ffcccc; /* Change color on hover */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.introduction {
-    position: fixed;
-    top: 50px; /* Adjust according to your navbar height */
-    left: 0;
-    right: 0;
+/* Assignment Section */
+#assignment {
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    width: 80%;
+    background-color: #f9f9f9;
     padding: 20px;
-    background-color: #924040;
-    overflow: hidden;
+    border: 1px solid #ccc;
 }
 
-.introduction p {
-    float: left;
-    width: 60%; /* Adjust as needed */
-    margin-right: 20px; /* Space between text and image */
-    line-height: 1.6; /* Line height */
-    text-align: justify; /* Text alignment */
-}
-
-.introduction img {
-    float: right;
-    width: 200px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.assignment {
-    position: fixed;
-    top: 300px; /* Adjust according to your layout */
-    left: 1500px; /* Adjust for proper alignment */
-    right: 0;
-    padding: 20px;
-    background-color: #8a3d3d;
-    z-index: 3;
-}
-
+/* Footer */
 footer {
     position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #333;
-    color: rgb(54, 33, 33);
+    width: 100%;
+    background-color: #444;
+    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
 }
 
-.portfolio {
-    position: fixed; /* Fixed positioning */
-    top: 270px; /* Position above the schedule */
-    left: 0px; /* Horizontal positioning */
-    width: calc(70% - 40px); /* Responsive width */
-    padding: 20px;
-    background-color: #b33636; /* Background color */
-    border: 1px solid #ccc; /* Border */
-    z-index: 2; /* Ensure it appears above other content */
-}
-
-.schedule {
-    position: fixed; /* Fixed positioning */
-    top: 710px; /* Position lower than portfolio */
-    left: 0px; /* Horizontal positioning */
-    width: calc(100% - 40px); /* Responsive width */
-    padding: 20px;
-    background-color: #b33636; /* Background color */
-    border: 1px solid #ccc; /* Border */
-    z-index: 1; /* Lower than portfolio */
-}
-
-.contact {
-    position: fixed; /* Fixed positioning */
-    top: 570px; /* Position between portfolio and schedule */
-    left: 0px; /* Horizontal positioning */
-    width: calc(30% - 40px); /* Responsive width */
-    padding: 20px;
-    background-color: #b33636; /* Background color */
-    border: 1px solid #ccc; /* Border */
-    z-index: 3
-}
-
-/* Additional Styles */
+/* Typography */
 h1 {
-    text-transform: uppercase; /* Uppercase for headers */
-    letter-spacing: 2px; /* Letter spacing */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Text shadow */
-}
-
-h2 {
-    color: #555; /* Color for h2 elements */
-}
-
-/* Special style for first letter of all paragraphs */
-p::first-letter {
-    color: #ff0000; /* Different color */
-    font-size: 2em; /* Larger font size */
-}
-
-/* Box shadow for the first paragraph in portfolio */
-.portfolio p:first-of-type {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Box shadow */
-}
-
-/* Table styles */
-table {
-    border: 1px solid #ccc; /* Table border */
-    padding: 10px; /* Table padding */
-    vertical-align: top; /* Vertical alignment for cells */
-    empty-cells: show; /* Show empty cells */
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9; /* Background color for even rows */
-}
-
-/* Transition rule for h1 elements */
-h1 {
-    transition: all 0.3s ease; /* Transition effect */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease; /* Transition rule for h1 elements */
 }
 
 h1:hover {
-    transform: scale(1.05); /* Scale on hover */
+    transform: scale(1.1); /* Transform rule for hover effect */
+}
+
+/* Font */
+p {
+    font-family: 'Arial', sans-serif; /* Pick a web font */
+    line-height: 1.6; /* Line height for paragraphs */
+    text-align: justify; /* Align text */
+}
+
+/* Lists */
+ul {
+    font-size: 16px;
+    font-weight: bold; /* Font weight for lists */
+    color: blue; /* Font color for lists */
+}
+
+/* Background */
+body {
+    background-image: url('background.jpg'); /* Set a background image */
+}
+
+/* Borders */
+#portfolio, #contact, #schedule {
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+/* Special Styles */
+p::first-letter {
+    font-size: 2em;
+    color: red; /* Styling the first letter of all paragraphs */
 }
