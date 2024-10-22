@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +10,10 @@ body {
     background-color: #f0f0f0;
     padding-top: 60px; /* Adjust for navbar height */
     padding-bottom: 40px; /* Adjust for footer */
+    background-image: url('path_to_your_image.jpg'); /* Added background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Navigation Bar */
@@ -31,6 +34,7 @@ body {
 
 .navbar ul li {
     margin: 0 15px;
+    border-radius: 8px; /* Added rounded corners to nav items */
 }
 
 .navbar ul li a {
@@ -57,6 +61,8 @@ body {
 .introduction h1 {
     margin-bottom: 20px;
     text-align: center;
+    border-radius: 8px;  /* Added rounded corners to h1 */
+    border: 2px solid #ccc; /* Added border to h1 */
 }
 
 .introduction p {
@@ -100,6 +106,10 @@ body {
     border-radius: 8px;
 }
 
+.portfolio p:first-of-type {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow to the first paragraph */
+}
+
 /* Footer */
 footer {
     position: fixed;
@@ -111,12 +121,13 @@ footer {
     padding: 10px;
 }
 
-
+/* Styling for h1 */
 h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     transition: transform 0.3s ease;
+    border-radius: 8px; /* Added rounded corners to h1 */
 }
 
 h1:hover {
@@ -126,12 +137,13 @@ h1:hover {
 /* Styling for lists and paragraphs */
 ul, ol {
     font-weight: bold;
-    color: #333;
+    color: #333333; /* Added font color for lists */
 }
 
 p {
     line-height: 1.6;
     text-align: justify;
+    font-family: 'Roboto', sans-serif; /* Added web font for paragraphs */
 }
 
 /* Hover effect on links */
@@ -156,12 +168,10 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
-}
-
-table, th, td {
     border: 1px solid #15297d;
     padding: 10px;
-    text-align: left;
+    vertical-align: middle; /* Added vertical-align */
+    empty-cells: show; /* Added empty-cells */
 }
 
 tbody tr:nth-child(even) {
