@@ -47,7 +47,7 @@ body {
 /* Introduction Section */
 .introduction {
     margin: 20px auto;
-    padding: 30px; /* Increased padding for more space */
+    padding: 30px; 
     width: 80%;
     background-color: #e91f1f;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -68,9 +68,9 @@ body {
 /* Introduction Image */
 .introduction img {
     float: right;
-    width: auto; /* Change to auto to maintain aspect ratio */
-    max-width: 50%; /* Ensures the image doesn't exceed the container width */
-    height: 200px; /* Maintain the aspect ratio */
+    width: auto; 
+    max-width: 50%; 
+    height: 200px; 
     margin-left: 20px;
     border-radius: 80px;
 }
@@ -171,7 +171,7 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
     background-color: #b72d2d;
 }
-/* Additional adjustments for layout */
+
 body {
     background-color: #451fb8;
 }
