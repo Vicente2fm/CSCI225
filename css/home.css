@@ -79,6 +79,12 @@ body {
     height: 200px; 
     margin-left: 20px;
     border-radius: 80px;
+    opacity: 0.8; /* Makes images a bit transparent */
+    transition: opacity 0.3s ease;
+}
+
+.introduction img:hover {
+    opacity: 1; /* Restores full opacity on hover */
 }
 
 /* Assignment Section */
@@ -180,6 +186,21 @@ tbody tr:nth-child(even) {
 
 tbody tr:nth-child(odd) {
     background-color: #b72d2d;
+}
+
+h2 {
+    -webkit-text-stroke: 1px black; /* Added text stroke to h2 */
+    color: white;
+}
+
+/* Opacity effect on images */
+img {
+    opacity: 0.8; /* Makes images a bit transparent */
+    transition: opacity 0.3s ease;
+}
+
+img:hover {
+    opacity: 1; /* Restores full opacity on hover */
 }
 
 body {
