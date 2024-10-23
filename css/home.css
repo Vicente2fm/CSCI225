@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* Body styling */
 body {
     font-family: "Tiny5", sans-serif;
@@ -145,9 +146,7 @@ ul, ol {
     font-weight: bold;
     color: #333333; /* Added font color for lists */
 }
-ul li {
-    list-style-image: url('path_to_marker_image.png');
-}
+
 p {
     line-height: 1.6;
     text-align: justify;
