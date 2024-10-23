@@ -6,7 +6,7 @@
 
 /* Body styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Tiny5", sans-serif;
     background-color: #f0f0f0;
     padding-top: 60px; /* Adjust for navbar height */
     padding-bottom: 40px; /* Adjust for footer */
@@ -149,7 +149,7 @@ ul, ol {
 p {
     line-height: 1.6;
     text-align: justify;
-    font-family: 'Roboto', sans-serif; /* Added web font for paragraphs */
+    font-family: "Tiny5", sans-serif;; /* Added web font for paragraphs */
 }
 
 /* Hover effect on links */
