@@ -9,9 +9,9 @@
 body {
     font-family: "Tiny5", sans-serif;
     background-color: #f0f0f0;
-    padding-top: 60px; /* Adjust for navbar height */
-    padding-bottom: 40px; /* Adjust for footer */
-    background-image: url('path_to_your_image.jpg'); /* Added background image */
+    padding-top: 60px; 
+    padding-bottom: 40px; 
+    background-image: url(C:\github\CSCI225-1\img\peter.jpg); /* Added background image */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
