@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversion Calculator</title>
+    <style>
+        /* Basic styling for the calculator */
+        .converter {
+            max-width: 400px;
+            margin: auto;
+            padding: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        label, input, select, button {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="converter">
+    <h2>Unit Conversion Calculator</h2>
+
+    <!-- Input Field and Unit Selection -->
+    <label for="inputValue">Enter Value:</label>
+    <input type="text" id="inputValue" placeholder="Enter a number" />
+
+    <label for="inputUnit">From:</label>
+    <select id="inputUnit">
+        <option value="foot">Foot</option>
+        <option value="inch">Inch</option>
+        <option value="meter">Meter</option>
+    </select>
+
+    <!-- Output Field and Unit Selection -->
+    <label for="outputValue">Converted Value:</label>
+    <input type="text" id="outputValue" readonly />
+
+    <label for="outputUnit">To:</label>
+    <select id="outputUnit">
+        <option value="foot">Foot</option>
+        <option value="inch">Inch</option>
+        <option value="meter">Meter</option>
+    </select>
+
+    <!-- Convert Button -->
+    <button onclick="convert()">Convert</button>
+</div>
+
+<!-- JavaScript for Conversion Logic -->
+<script>
+    function convert() {
+        // Read input value and units
+        const inputValue = parseFloat(document.getElementById("inputValue").value);
+        const inputUnit = document.getElementById("inputUnit").value;
+        const outputUnit = document.getElementById("outputUnit").value;
+
+        if (isNaN(inputValue)) {
+            alert("Please enter a valid number.");
+            return;
+        }
+
+        // Conversion factors to meters for each unit
+        const toMeters = {
+            foot: 0.305,
+            inch: 0.0254,
+            meter: 1
+        };
+
+        // Convert input value to meters
+        const valueInMeters = inputValue * toMeters[inputUnit];
+
+        // Convert from meters to the target unit
+        const convertedValue = valueInMeters / toMeters[outputUnit];
+
+        // Display output
+        document.getElementById("outputValue").value = convertedValue;
+    }
+</script>
+
+</body>
+</html>
