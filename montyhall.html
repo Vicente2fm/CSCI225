@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monty Hall Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Monty Hall Game</h1>
+
+    <p>Welcome to the Monty Hall game! There are three doors. Behind one is a car, and behind the other two are goats. 
+       Choose a door, and then decide whether to switch after the host reveals a goat behind one of the other doors!</p>
+
+    <!-- Start Game Button -->
+    <button id="startGame">Start Game</button>
+
+    <!-- Doors Container -->
+    <div class="doors-container">
+      <div class="door" data-door="1">
+        <div class="door-inner">
+          <div class="door-front"></div>
+          <div class="door-back"></div>
+        </div>
+        <span>Door 1</span>
+      </div>
+
+      <div class="door" data-door="2">
+        <div class="door-inner">
+          <div class="door-front"></div>
+          <div class="door-back"></div>
+        </div>
+        <span>Door 2</span>
+      </div>
+
+      <div class="door" data-door="3">
+        <div class="door-inner">
+          <div class="door-front"></div>
+          <div class="door-back"></div>
+        </div>
+        <span>Door 3</span>
+      </div>
+    </div>
+
+    <!-- Host's Action Section -->
+    <div id="hostAction">
+      <p id="hostMessage">The host has revealed a goat behind one of the other doors. Do you want to switch?</p>
+      <button id="switch">Switch</button>
+      <button id="stick">Stick with Your Choice</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result">
+      <p id="outcomeMessage"></p>
+      <button id="playAgain">Play Again</button>
+    </div>
+  </div>
+
+  <!-- Link to JavaScript -->
+  <script src="montyhall.js"></script>
+</body>
+</html>
