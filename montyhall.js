@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let prizeDoor; // The door behind which the car is located
-    let selectedDoor; // The door the player initially selects
-    let revealedDoor; // The door that the host reveals (one with a goat)
+    let prizeDoor; 
+    let selectedDoor; 
+    let revealedDoor; 
     let doorsClicked = false; // Flag to check if any door has been clicked
   
     const doors = document.querySelectorAll(".door"); // Get all the door elements

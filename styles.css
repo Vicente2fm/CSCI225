@@ -1,7 +1,7 @@
 /* General Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #2c88f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ body {
     font-size: 16px;
     padding: 10px 20px;
     border: none;
-    background-color: #4CAF50;
+    background-color: #d82929;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -30,7 +30,7 @@ body {
   }
   
   button:disabled {
-    background-color: #888;
+    background-color: #664646;
     cursor: not-allowed;
   }
   
@@ -91,7 +91,7 @@ body {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: rgb(204, 63, 63);
     font-size: 18px;
   }
   
@@ -130,7 +130,7 @@ body {
     display: none;
   }
   
-  /* Adjustments for mobile responsiveness */
+  /* Adjustments for responsiveness */
   @media (max-width: 768px) {
     .doors-container {
       flex-direction: column;
