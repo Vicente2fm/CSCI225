@@ -62,8 +62,8 @@ body {
 .introduction h1 {
     margin-bottom: 20px;
     text-align: center;
-    border-radius: 8px;  /* Added rounded corners to h1 */
-    border: 2px solid #ccc; /* Added border to h1 */
+    border-radius: 8px;  
+    border: 2px solid #ccc; /
 }
 
 .introduction p {
@@ -72,7 +72,7 @@ body {
     line-height: 1.8;
 }
 
-/* Introduction Image */
+
 .introduction img {
     float: right;
     width: auto; 
@@ -80,15 +80,15 @@ body {
     height: 200px; 
     margin-left: 20px;
     border-radius: 80px;
-    opacity: 0.8; /* Makes images a bit transparent */
+    opacity: 0.8; 
     transition: opacity 0.3s ease;
 }
 
 .introduction img:hover {
-    opacity: 1; /* Restores full opacity on hover */
+    opacity: 1; 
 }
 
-/* Assignment Section */
+
 .assignment {
     position: absolute;
     top: 375px;
